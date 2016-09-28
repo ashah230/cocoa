@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cocoa Exchange</title>
+         <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    </head>
+    
+<body>
+    <div id="page1">
+        <a id="heading" class="smooth"></a>
+        <div id="navbar">
+        <h1>One Building.</h1>
+        <h2>So many lives.</h2>
+        </div>
+    </div>
+
+<div id="page2">
+  <a id="shippingline" class="smooth"></a>
+      <img src="images/shipimg.jpg" alt="Munson-Shipping-Line" class="images">
+</div>
+ 
+<div id="page3">
+  <a id="cocoa" class="smooth"></a>
+    <img src="images/cocoaimg.jpg" alt="Cocoa-Exchange" class="images">
+</div>
+ 
+<div id="page4">
+  <a id="apartment" class="smooth"></a>
+    <img src="images/aptimg.jpg" alt="NewYork-Apartments" class="images">
+</div>    
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+<script>
+$('.smooth').on('click', function() {
+    $.smoothScroll({
+        scrollElement: $('body'),
+        scrollTarget: '#' + this.id
+    });
+    
+    return false;
+});
+</script>
+
+</body>
+
+
+</html>
